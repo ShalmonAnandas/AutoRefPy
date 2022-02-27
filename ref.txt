@@ -1,6 +1,1 @@
 http://scop.berkeley.edu/sunid=81789
-http://scop.berkeley.edu/sunid=81790
-http://scop.berkeley.edu/sunid=81791
-http://scop.berkeley.edu/sunid=81792
-http://scop.berkeley.edu/sunid=81793
-http://scop.berkeley.edu/sunid=84018

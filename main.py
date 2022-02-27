@@ -25,7 +25,7 @@ def cite_loop(link):
     driver.find_element(By.CSS_SELECTOR, "*[data-test=\"citation-search-input\"]").send_keys(link)
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "*[data-test=\"citation-search-button\"]").click()
-    time.sleep(10)
+    time.sleep(5)
     driver.find_element(By.CSS_SELECTOR, ".sc-fzoYHE > .styled__ResultButtonText-jhqr36-14").click()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, ".sc-fzplWN > .sc-fzoYHE").click()
@@ -37,7 +37,14 @@ def cite_loop(link):
     driver.find_element(By.CSS_SELECTOR, ".sc-fznJRM:nth-child(1) > .sc-fzoYHE").click()
     time.sleep(2)
 
+def export_refs():
+    driver.back()
+    time.sleep(2)
+    driver.back()
+    time.sleep(2)
+    
     
 read_links()
 for i in range(read_links.count):
     cite_loop(read_links.ref_list[i])
+export_refs()

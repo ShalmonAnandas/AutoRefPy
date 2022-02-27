@@ -9,4 +9,5 @@ An automatic reference generator for links using Python, Selenium and citationma
 # USAGE
 1. Put all your links in ref.txt
 2. run main.py
-3. Let your computer do the work
+3. Walk away for a while and let your computer do the work
+4. Choose how you want to export the references.

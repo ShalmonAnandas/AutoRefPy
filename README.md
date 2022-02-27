@@ -3,6 +3,7 @@ An automatic reference generator for links using Python, Selenium and citationma
 
 # REQUIREMENTS
 > Python 3
+> 
 > Selenium
 
 # USAGE

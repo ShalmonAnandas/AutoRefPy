@@ -1,11 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.options import Options
-
+from selenium.webdriver.chrome.options import Options
 import time
 
-options = webdriver.ChromeOptions()
+options = Options()
 options.add_extension("./uBlock-Origin.crx")
+options.add_experimental_option("detach", True)
 driver = webdriver.Chrome(options=options)
 
 driver.get("https://www.citationmachine.net/apa/cite-a-website")
@@ -26,7 +26,7 @@ def cite_loop(link):
     time.sleep(1)
     driver.find_element(By.CSS_SELECTOR, "*[data-test=\"citation-search-button\"]").click()
     time.sleep(5)
-    driver.find_element(By.CSS_SELECTOR, ".sc-fzoYHE > .styled__ResultButtonText-jhqr36-14").click()
+    driver.find_element(By.CSS_SELECTOR, ".sc-fzoYHE > .styled__ResultButtonText-sc-jhqr36-14").click()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, ".sc-fzplWN > .sc-fzoYHE").click()
     time.sleep(2)
